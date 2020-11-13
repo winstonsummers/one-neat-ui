@@ -2,11 +2,11 @@ const logUrl: string = ''
 
 interface ILogger {
     info: (args: any) => Promise<Response>
-    warn: Console['warn']
+    warn: (args: any) => Promise<Response>
     error: (args: any) => Promise<Response>
 }
 
-type TLogLevel = 'error' | 'log'
+type TLogLevel = 'error' | 'log' | 'warn'
 
 const logWrapper = (logIt: any, level: TLogLevel) => (args: any) => {
     if (logUrl.length <= 0) {
@@ -25,7 +25,7 @@ const logMethod = (args: any, level: TLogLevel) => {
 }
 const Logger: ILogger = {
     info: logWrapper(logMethod, 'log'),
-    warn: console.warn,
+    warn: logWrapper(logMethod, 'warn'),
     error: logWrapper(logMethod, 'error'),
 }
 
