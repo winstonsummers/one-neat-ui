@@ -16,7 +16,7 @@ interface IState {
 
 const initialState: IState = {
     something: true,
-    error: null
+    error: null,
 }
 
 const reducer = (state: IState, action: IAction) => {
