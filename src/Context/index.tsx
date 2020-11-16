@@ -11,10 +11,12 @@ interface IAction {
 
 interface IState {
     something: boolean
+    error: null | any
 }
 
-const initialState = {
+const initialState: IState = {
     something: true,
+    error: null
 }
 
 const reducer = (state: IState, action: IAction) => {
@@ -45,7 +47,7 @@ const AppProvider: React.FC<IAppProviderProps> = ({ children }) => {
             state,
             userDispatch: dispatch,
         }
-    }, [state])
+    }, [dispatch, state])
 
     return <Provider value={data}>{children}</Provider>
 }
