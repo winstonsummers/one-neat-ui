@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Button: React.FC = () => {
-    return <div></div>
+interface ISearchBar {
+
 }
 
-export default Button
+const SearchBar: React.FC<ISearchBar> = (props) => {
+return <div {...props}></div>
+}
+
+export default SearchBar

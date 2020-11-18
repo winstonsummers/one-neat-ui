@@ -1,7 +1,21 @@
+import { Tooltip } from 'antd'
 import React from 'react'
 
-const Button: React.FC = () => {
-    return <div></div>
+interface IImage {
+    altText: string
+    hoverText?: string
+    imgUrl: string
+    className: string
 }
 
-export default Button
+const Image: React.FC<IImage> = ({ altText, hoverText, imgUrl, className }) => {
+    return (
+        <div className={'image-container ' + className}>
+            <Tooltip title={hoverText ? hoverText : altText}>
+                <img src={imgUrl} alt={altText} />
+            </Tooltip>
+        </div>
+    )
+}
+
+export default Image
