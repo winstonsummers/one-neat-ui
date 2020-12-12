@@ -1,8 +1,8 @@
 import Logger from '../Logger'
 
 interface IFetchCli {
-    get: (data?: any) => Promise<any>
-    post: (data?: any) => Promise<any> 
+    get: (data?: any) => Promise<Response>
+    post: (data?: any) => Promise<Response> 
 }
 
 interface IFetchCliArgs {

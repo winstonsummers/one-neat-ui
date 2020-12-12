@@ -8,10 +8,12 @@ interface ILogger {
 
 type TLogLevel = 'error' | 'log' | 'warn'
 
-const logWrapper = (logIt: any, level: TLogLevel) => (args: any) => {
+const logWrapper = (logIt: any, level: TLogLevel) => (args: any): Promise<Response> => {
     if (logUrl.length <= 0) {
-        console[level](args)
-        return null
+        return new Promise((resolve) => {
+            console[level](args)
+            resolve(new Response(`No url provided, console.${level} => ${args}`))
+        })
     } else {
         return logIt(args, level)
     }
