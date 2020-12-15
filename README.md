@@ -5,15 +5,15 @@ One Neat Whisky is a alcohol recommendation system. Our goal is to provide users
 ## Tech used
 
 Front-end tech:
-- ReactJS
-- Typescript
-- Ant Design
+- [ReactJS](https://reactjs.org)
+- [Typescript](https://www.typescriptlang.org)
+- [Ant Design](https://ant.design)
 
 Back-end tech:
-- Python
-- Pandas
-- Django
-- MongoDB
+- [Python](https://www.python.org)
+- [Pandas](https://pandas.pydata.org)
+- [Django Rest Framework](https://www.django-rest-framework.org)
+- [MongoDB](https://www.mongodb.com/1)
 
 ## Current Scope and Future Plans
 
@@ -39,4 +39,11 @@ npx start
 
 and we don't mix our package managers like a bunch of savages so... it should magically work.
 
-If you intend to work on testing you will need to enure that cypress is set up on your computer. [this](https://www.cypress.io/) is the source I use to work with cypress, trust none else.
+If you intend to work on testing you will need to enure that cypress is set up on your computer. [this is the source I use to work with cypress,](https://www.cypress.io/) trust none else (except [stack overflow,](https://stackoverflow.com) when nothing seems to work).
+
+## For More...
+
+Don't forget to check out `./styleGuide` for more markdowns, to see more about the development of this project. 
+
+Also check out [my github](https://github.com/winstonsummers) and [Patrick's github](https://github.com/Patrick-Hubbell) for some of our other work.
+
