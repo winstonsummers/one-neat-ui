@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import ErrorView from './ErrorView'
 
 interface IErrorBoundary {
     children?: any
@@ -10,7 +11,7 @@ const ErrorBoundary: React.FC<IErrorBoundary> = (props) => {
         props.errorData === null ? (
             <div className='errorBoundaryPassed'>{props.children}</div>
         ) : (
-            <div>ERROR</div>
+            <ErrorView />
         )
     return returnable
 }

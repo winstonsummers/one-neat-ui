@@ -6,9 +6,10 @@ interface ISearchBar {
 }
 
 const SEARCH_FLAVOR_TEXT = [
-    "What's your drink?",
+    'What\'s your drink?',
     'Need a cold one?',
     'Pick your Poison',
+    'How about a brew?',
 ]
 
 const getFlavorText = (): string => {
@@ -32,15 +33,15 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     return (
         <div>
             <form onSubmit={onSearch}>
+                <input type='submit'>
+                    <SearchOutlined />
+                </input>
                 <input
                     type='text'
                     onChange={onChange}
                     value={searchValue}
                     placeholder={getFlavorText()}
                 />
-                <input type='submit'>
-                    <SearchOutlined />
-                </input>
             </form>
         </div>
     )

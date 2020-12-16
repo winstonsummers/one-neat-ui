@@ -12,7 +12,7 @@
     ]
   },
   "rules": {
-    "no-submodule-imports": [true ,"coreux-widgets", "lodash/fp","antd/lib/icon"],
+    "no-submodule-imports": true,
     "no-console": false,
     "import-name": false,
     "no-boolean-literal-compare": true,

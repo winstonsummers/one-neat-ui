@@ -2,18 +2,19 @@ import { Button as AButton } from 'antd'
 import React from 'react'
 
 export interface IButton {
-    onClick: any
+    onClick: (e: React.MouseEvent<HTMLElement, MouseEvent>) => void
     text: any
-    onError: any
-    onSuccess: any
+    disabled: boolean
 }
 
-const Button: React.FC<IButton> = (props) => {
-    // add some base error handling
+const Button: React.FC<IButton> = ({ onClick, text, disabled }) => {
+    // add some styling and stuff
 
-    // might simplify this....
-
-    return <AButton {...props} />
+    return (
+        <AButton disabled={disabled} onClick={onClick}>
+            {text}
+        </AButton>
+    )
 }
 
 export default Button
