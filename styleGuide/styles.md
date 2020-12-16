@@ -23,3 +23,5 @@ These are the colors we will use for backgrounds and shades and text and so on. 
 These colors will be the do something colors. For buttons and links and tooltips and anything the user is looking to be slightly different so they can press the button and get what they are looking for. Not so much contrast that they become straining, but enough to be understandable. Not to say we wont use some of the Primary Scheme's, but that these are extra colors to add clarity of intent.
 
 ## Wire frames
+
+We are going for a dark design presently, this may change if we don't love how it looks. Easy on the eyes is the big goal.

@@ -1,0 +1,15 @@
+div.search-bar-container {
+    background-color: #8A5F2D;
+    color: #f5f6f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.search-bar-container form {
+    background-color: #BC9261;
+}
+
+div.search-bar-container form input[type=submit] {
+    border: #8A5F2D 2px solid;
+}
