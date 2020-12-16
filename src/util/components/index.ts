@@ -1,13 +1,13 @@
-import Button from './Button'
+import Buttons from './Buttons'
 import Image from './Image'
 import Rating from './Rating'
-import SearchBar from './SearchBar' 
+import SearchBar from './SearchBar'
 
 const CoreComp = {
-    Button,
+    ...Buttons,
     Image,
     Rating,
-    SearchBar
+    SearchBar,
 }
 
 export default CoreComp

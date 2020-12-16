@@ -9,7 +9,7 @@ const makeFractional = (cleanPercent: number): string => {
     const outtaTen = '/10'
     const decimal = '.'
     let returnable: string
-    
+
     const strArr = cleanPercent.toString().split('')
 
     strArr[-1] !== '0' ? strArr.splice(-2, 0, decimal) : strArr.pop()
@@ -27,7 +27,10 @@ const Rating: React.FC<IRating> = ({ ratingPercent }) => {
     return (
         <div className='rating-container'>
             <Tooltip title={fractionalValue}>
-                <div className='rating'></div>
+                <div
+                    className='rating'
+                    style={{ width: `${cleanPercent}%` }}
+                ></div>
             </Tooltip>
         </div>
     )

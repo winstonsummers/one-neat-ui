@@ -1,10 +1,11 @@
 import { Button as AButton } from 'antd'
 import React from 'react'
 
-interface IButton {
+export interface IButton {
     onClick: any
-    text: string
+    text: any
     onError: any
+    onSuccess: any
 }
 
 const Button: React.FC<IButton> = (props) => {
