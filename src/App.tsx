@@ -1,11 +1,12 @@
 import React from 'react'
-import { SearchBar } from './util/Components'
+import NavBar from './components/NavBar'
+import { AppProvider } from './Context'
 
 function App() {
     return (
-        <div className='App'>
-            <SearchBar onSearch={console.log} />
-        </div>
+        <AppProvider className='App'>
+            <NavBar />
+        </AppProvider>
     )
 }
 

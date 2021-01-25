@@ -34,7 +34,7 @@ npm install
 then 
 
 ```
-npx start
+npm start
 ```
 
 and we don't mix our package managers like a bunch of savages so... it should magically work.

@@ -8,10 +8,12 @@ interface ISearchBar {
 }
 
 const SEARCH_FLAVOR_TEXT = [
-    'What\'s your drink?',
+    "What's your drink?",
     'Need a cold one?',
     'Pick your Poison',
     'How about a brew?',
+    'BEER!',
+    'One Neat Search',
 ]
 
 const getFlavorText = (): string => {
@@ -23,7 +25,11 @@ const getFlavorText = (): string => {
 const SearchBar: React.FC<ISearchBar> = (props) => {
     const [searchValue, setValue] = React.useState('')
 
-    const onSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    const onSearch = (
+        e:
+            | React.FormEvent<HTMLFormElement>
+            | React.MouseEvent<HTMLSpanElement, MouseEvent>,
+    ) => {
         e.preventDefault()
         props.onSearch(searchValue)
     }
@@ -35,9 +41,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     return (
         <div className='search-bar-container'>
             <form onSubmit={onSearch}>
-                <input type='submit'>
-                    <SearchOutlined />
-                </input>
+                <SearchOutlined onClick={onSearch} className='bordered' />
                 <input
                     type='text'
                     onChange={onChange}

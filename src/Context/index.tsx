@@ -37,9 +37,10 @@ const useState = () => {
 
 interface IAppProviderProps {
     children?: ReactNode
+    className?: string
 }
 
-const AppProvider: React.FC<IAppProviderProps> = ({ children }) => {
+const AppProvider: React.FC<IAppProviderProps> = ({ children, className }) => {
     const { state, dispatch } = useState()
 
     const data = React.useMemo(() => {
@@ -49,7 +50,7 @@ const AppProvider: React.FC<IAppProviderProps> = ({ children }) => {
         }
     }, [dispatch, state])
 
-    return <Provider value={data}>{children}</Provider>
+    return <Provider className={className} value={data}>{children}</Provider>
 }
 
 interface IAppContextProps {

@@ -9,7 +9,3 @@ div.search-bar-container {
 div.search-bar-container form {
     background-color: #BC9261;
 }
-
-div.search-bar-container form input[type=submit] {
-    border: #8A5F2D 2px solid;
-}

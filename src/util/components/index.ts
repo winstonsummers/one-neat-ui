@@ -1,10 +1,10 @@
+import ac from './ActionControls'
 import b from './Buttons'
 import i from './Image'
 import r from './Rating'
 import sb from './SearchBar'
-import ac from './ActionControls'
 
-export const SearchBar = sb  
+export const SearchBar = sb
 const Buttons = b
 export const Button = Buttons.Button
 export const DropButton = Buttons.DropButton
