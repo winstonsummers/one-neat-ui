@@ -14,6 +14,7 @@ const SEARCH_FLAVOR_TEXT = [
     'How about a brew?',
     'BEER!',
     'One Neat Search',
+    'Got a Brewski?',
 ]
 
 const getFlavorText = (): string => {

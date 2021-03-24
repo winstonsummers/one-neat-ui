@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../Image'
+import Image from '../../util/Components/Image'
 
 const ErrorView: React.FC = () => {
     return (

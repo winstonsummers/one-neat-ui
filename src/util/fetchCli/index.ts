@@ -11,7 +11,7 @@ interface IFetchCliArgs {
 
 type TMethod = 'POST' | 'GET'
 
-const FetchCli = ({ url }: IFetchCliArgs): IFetchCli => {
+const FetchCli = ({ url }: IFetchCliArgs ): IFetchCli => {
     const fetching = (method: TMethod) => (data?: any) => {
         return fetch(url, {
             method,
