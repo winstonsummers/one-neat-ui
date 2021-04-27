@@ -1,1 +1,3 @@
-export const thing = 'a place holder'
+
+
+export type TStorage = 'localStorage'

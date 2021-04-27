@@ -1,6 +1,7 @@
 
 html, body {
   background-color: #242A3C;
+  background-image: url('./diagmonds.png');
 }
 
 body {
@@ -11,6 +12,17 @@ body {
 }
 
 .bordered {
-  border-right: #8A5F2D 2px solid;
-  border-bottom: #8A5F2D 2px solid;
+  padding: 4px 2px 2px 4px;
+  border-right: #242A3C 1px solid;
+  border-bottom: #242A3C 1px solid;
+}
+
+.focusable:focus {
+  outline: none;
+  border-right: #242A3C 1px solid;
+  border-bottom: #242A3C 1px solid;
+}
+
+.stop-focus:focus {
+  outline: none;
 }

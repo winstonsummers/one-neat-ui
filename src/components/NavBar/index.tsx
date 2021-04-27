@@ -1,5 +1,7 @@
 import React from 'react'
-import { ActionControls, SearchBar } from '../../util/Components'
+import { ActionControls } from '../../util/Components'
+import './index.css'
+import SearchBar from './SearchBar'
 
 interface INavBar {
 
@@ -7,7 +9,7 @@ interface INavBar {
 
 const NavBar: React.FC<INavBar> = (props) => {
     return (
-        <div>
+        <div className='navbar-container' >
             <SearchBar onSearch={console.log} />
             <ActionControls />
         </div>

@@ -10,12 +10,12 @@ interface IAction {
 }
 
 interface IState {
-    something: boolean
+    isTwentyOne: boolean
     error: null | any
 }
 
 const initialState: IState = {
-    something: true,
+    isTwentyOne: false,
     error: null,
 }
 

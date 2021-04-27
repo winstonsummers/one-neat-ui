@@ -1,6 +1,4 @@
 import { SearchOutlined } from '@ant-design/icons'
-import ActionControls from '../ActionControls'
-import './index.css'
 import React from 'react'
 
 interface ISearchBar {
@@ -8,7 +6,7 @@ interface ISearchBar {
 }
 
 const SEARCH_FLAVOR_TEXT = [
-    "What's your drink?",
+    'What\'s your drink?',
     'Need a cold one?',
     'Pick your Poison',
     'How about a brew?',
@@ -42,15 +40,15 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     return (
         <div className='search-bar-container'>
             <form onSubmit={onSearch}>
-                <SearchOutlined onClick={onSearch} className='bordered' />
+                <SearchOutlined onClick={onSearch} className='bordered stop-focus' />
                 <input
                     type='text'
                     onChange={onChange}
                     value={searchValue}
                     placeholder={getFlavorText()}
+                    className='focusable'
                 />
             </form>
-            <ActionControls />
         </div>
     )
 }
