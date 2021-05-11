@@ -12,7 +12,10 @@ const SEARCH_FLAVOR_TEXT = [
     'How about a brew?',
     'BEER!',
     'One Neat Search',
-    'Got a Brewski?',
+    'Got a Brew\'ski?',
+    'Its 5\'o\'clock somewhere...',
+    'Beer for the horses...',
+    'Cheers',
 ]
 
 const getFlavorText = (): string => {
@@ -40,7 +43,10 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     return (
         <div className='search-bar-container'>
             <form onSubmit={onSearch}>
-                <SearchOutlined onClick={onSearch} className='bordered stop-focus' />
+                <SearchOutlined
+                    onClick={onSearch}
+                    className='bordered stop-focus'
+                />
                 <input
                     type='text'
                     onChange={onChange}

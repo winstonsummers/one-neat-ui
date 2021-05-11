@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import ErrorView from './ErrorView'
+import { MessagePage } from '../../util/Components'
 
 interface IErrorBoundary {
     children?: any
@@ -11,7 +11,14 @@ const ErrorBoundary: React.FC<IErrorBoundary> = (props) => {
         props.errorData === null ? (
             <div className='errorBoundaryPassed'>{props.children}</div>
         ) : (
-            <ErrorView />
+            <MessagePage
+                imgAlt='well that is something'
+                imgUrl='coming soon'
+                title='Well this is embarrassing...'
+                message={
+                    'Seems someone did something and screwed up my website. Seriously you just can\'t find good help these days. Tell you what, if refreshing the page doesn\'t fix this, go refresh your drink instead and things should be better when you get back.'
+                }
+            />
         )
     return returnable
 }

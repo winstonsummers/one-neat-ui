@@ -8,10 +8,11 @@ div.navbar-container {
     height: 1.75em;
 }
 
-div.search-bar-container {
+div.search-bar-container form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-left: 1em;
 }
 
@@ -20,6 +21,7 @@ div.search-bar-container form input {
     color: #f5f6f8;
     border: none;
     margin-left: .5em;
+    height: 1em;
 }
 
 div.search-bar-container form input::placeholder {
