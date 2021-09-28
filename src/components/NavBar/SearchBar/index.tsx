@@ -34,6 +34,7 @@ const SearchBar: React.FC<ISearchBar> = (props) => {
     ) => {
         e.preventDefault()
         props.onSearch(searchValue)
+        setValue('')
     }
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {

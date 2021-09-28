@@ -1,6 +1,7 @@
 import Logger from '../Logger'
 
-// this file is going to be the guts of the storageCli's. thus the pieces can be assembled as needed for more specific cli's later
+// this file is going to be the guts of the storageCli's. 
+// thus the pieces can be assembled as needed for more specific cli's later
 
 /**
  * Just the types of storage that we are accessing
@@ -24,7 +25,8 @@ export const storageAvailable = (type: TStorage = 'localStorage'): boolean => {
 
         return true
     } catch (e) {
-        Logger.warn(e) // this is going to be a warn for now because the log is probably worth having alone but in all likelihood, this shouldn't prevent the user from doing anything for reals-ies
+        Logger.warn(e) // this is going to be a warn for now because the log is probably worth having alone but in all 
+                       // likelihood, this shouldn't prevent the user from doing anything for reals-ies
 
         return !!(
             e instanceof DOMException &&

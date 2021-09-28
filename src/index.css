@@ -26,3 +26,9 @@ body {
 .stop-focus:focus {
   outline: none;
 }
+
+.tool-tip {
+  background-color: orange;
+  border: 2px black solid;
+  
+}

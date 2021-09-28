@@ -27,3 +27,8 @@ div.search-bar-container form input {
 div.search-bar-container form input::placeholder {
     color: #f5f6f8;
 }
+
+div.search-bar-container form span {
+    background-color: #f5f6f829;
+    border-top-left-radius: 36%;
+}

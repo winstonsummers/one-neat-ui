@@ -1,0 +1,11 @@
+div.rating-container {
+    height: 1em;
+    width: 7em;
+    background-color: green;
+    margin: .75em;
+}
+
+div.rating-container div.rating {
+    background-color: gold;
+    height: inherit;
+}

@@ -22,7 +22,7 @@
       true,
       {
         "limit": 120,
-        "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z]+ implements |//"
+        "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z]+ implements "
       }
     ],
     "no-string-literal": false,
